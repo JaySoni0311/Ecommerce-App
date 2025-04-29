@@ -10,7 +10,7 @@ import Checkout from "./components/Checkout";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename="Ecommerce-App">
         <div>
           <Navbar />
         </div>
