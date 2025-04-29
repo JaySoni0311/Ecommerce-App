@@ -1,0 +1,13 @@
+.App {
+  text-align: -webkit-center;
+  color: #747df3;
+}
+
+a {
+  text-decoration: none;
+  color: #747df3;
+}
+
+:root{
+  color-scheme: light dark;
+}

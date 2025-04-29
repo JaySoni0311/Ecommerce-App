@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "name": "Indigo Printed Dress",
+    "brand": "Fabindia",
+    "category": "Women's Clothing",
+    "size": "M",
+    "occasion": "Casual",
+    "color": "#3b4c6b",
+    "saleDiscount": 15,
+    "price": 2499.0,
+    "rating": 4.5,
+    "image": "/assets/images/drees1.jpg"
+  },
+
+  {
+    "id": 2,
+    "name": "Cotton Printed Dress",
+    "brand": "Fabindia",
+    "category": "Women's Clothing",
+    "size": "S",
+    "occasion": "Casual",
+    "color": "#f4a300",
+    "saleDiscount": 20,
+    "price": 1799.0,
+    "rating": 4.7,
+    "image": "/assets/images/dress2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Cotton Dress",
+    "brand": "Fabindia",
+    "category": "Women's Clothing",
+    "size": "S",
+    "occasion": "Casual",
+    "color": "#f4a300",
+    "saleDiscount": 20,
+    "price": 1299.0,
+    "rating": 4.1,
+    "image": "/assets/images/dress3.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Red Cotton Kurta",
+    "brand": "Fabindia",
+    "category": "Men's Clothing",
+    "size": "M",
+    "occasion": "Casual",
+    "color": "#ff0000",
+    "saleDiscount": 5,
+    "price": 1399.0,
+    "rating": 4.2,
+    "image": "/assets/images/redkurta.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Yellow Cotton Kurta",
+    "brand": "Fabindia",
+    "category": "Men's Clothing",
+    "size": "L",
+    "occasion": "Casual",
+    "color": "#ffeb3b",
+    "saleDiscount": 10,
+    "price": 1499.0,
+    "rating": 4.3,
+    "image": "/assets/images/yellow.jpg"
+  },
+
+  {
+    "id": 6,
+    "name": "Red Tape Men's Sneakers",
+    "brand": "Red Tape",
+    "category": "Footwear",
+    "size": "8",
+    "color": "Black",
+    "price": 1157.0,
+    "rating": 3.9,
+    "image": "/assets/images/whiteshoes.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Nike Men's Casuals",
+    "brand": "Nike",
+    "category": "Footwear",
+    "type": "Casual Shoes",
+    "size": "8",
+    "color": "red",
+    "material": "EVA",
+    "sole": "EVA",
+    "closure": "Slip-On",
+    "price": 2999.0,
+    "rating": 4.1,
+    "image": "/assets/images/redshoes.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Adidas Men's Shoes",
+    "brand": "Adidas",
+    "category": "Footwear",
+    "type": "Walking Shoes",
+    "size": "9",
+    "color": "Blue",
+    "material": "Mesh",
+    "sole": "Rubber",
+    "closure": "Lace-Up",
+    "price": 2799.0,
+    "rating": 4.0,
+    "image": "/assets/images/blueshoes.jpg"
+  },
+
+  {
+    "id": 9,
+    "name": "Red Tape Wallet",
+    "brand": "Red Tape",
+    "category": "Accessories",
+    "type": "Wallet",
+    "material": "Leather",
+    "color": "Black",
+    "price": 690.0,
+    "rating": 4.5,
+    "image": "/assets/images/wallet.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Red Tape Leather Combo",
+    "brand": "Red Tape",
+    "category": "Accessories",
+    "type": "Belt/Wallet",
+    "material": "Leather",
+    "color": "Brown",
+    "size": "34-42",
+    "price": 1250.0,
+    "rating": 4.3,
+    "image": "/assets/images/combowallet.jpg"
+  },
+
+  {
+    "id": 11,
+    "name": "Embroidered Silk Clutch",
+    "brand": "Fabindia",
+    "category": "Accessories",
+    "type": "Clutch",
+    "material": "Silk",
+    "color": "Red",
+    "occasion": "Evening",
+    "price": 1199.0,
+    "rating": 4.5,
+    "image": "/assets/images/clutch.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Black Clutch",
+    "brand": "Fabindia",
+    "category": "Accessories",
+    "type": "Clutch",
+    "material": "Silk",
+    "color": "Black",
+    "occasion": "Evening",
+    "price": 1899.0,
+    "rating": 4.0,
+    "image": "/assets/images/clutch2.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Perfume",
+    "brand": "Park-Avenue",
+    "category": "Accessories",
+    "type": "Perfume",
+    "price": 799.0,
+    "rating": 4.2,
+    "image": "/assets/images/perfume.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Perfume",
+    "brand": "Engage",
+    "category": "Accessories",
+    "type": "Perfume",
+    "price": 499.0,
+    "rating": 3.9,
+    "image": "/assets/images/perfume3.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Tshirt",
+    "brand": "Fabindia",
+    "category": "Men's Clothing",
+    "color": "Red",
+    "type": "Tshirt",
+    "price": 1499.0,
+    "rating": 4.9,
+    "image": "/assets/images/redtshirt.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Shirt for men",
+    "brand": "Fabindia",
+    "category": "Men's Clothing",
+    "type": "shirt",
+    "color": "Blue",
+
+    "price": 999.0,
+    "rating": 3.7,
+    "image": "/assets/images/blueshirt.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Tshirt",
+    "brand": "Fabindia",
+    "category": "Men's Clothing",
+    "type": "Tshirt",
+    "color": "Green",
+
+    "price": 699.0,
+    "rating": 4.2,
+    "image": "/assets/images/greentshirt.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Cotton Jeans",
+    "brand": "Fabindia",
+    "category": "Men's Clothing",
+    "type": "Jeans",
+    "color": "Green",
+
+    "price": 1599.0,
+    "rating": 4.2,
+    "image": "/assets/images/greenpant.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Jeans",
+    "brand": "Fabindia",
+    "category": "Men's Clothing",
+    "type": "Jeans",
+    "color": "Blue",
+
+    "price": 1299.0,
+    "rating": 4.4,
+    "image": "/assets/pant.jpg"
+  }
+]

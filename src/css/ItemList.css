@@ -1,0 +1,11 @@
+.item-list {
+  column-count: 5;
+}
+
+@media (max-width: 639px) {
+
+  .item-list {
+    column-count: 2;
+  }
+
+}
