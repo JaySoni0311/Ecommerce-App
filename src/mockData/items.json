@@ -10,7 +10,8 @@
     "saleDiscount": 15,
     "price": 2499.0,
     "rating": 4.5,
-    "image": "https://jaysoni0311.github.io/Ecommerce-App/assets/images/drees1.jpg"
+    
+    "image": "/assets/images/drees1.jpg"
 
   },
 
