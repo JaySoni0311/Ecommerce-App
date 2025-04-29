@@ -6,7 +6,6 @@ import Navbar from "./components/Navbar";
 import Cart from "./components/Cart";
 import Orders from "./components/Orders";
 import Checkout from "./components/Checkout";
-import Footer from "./components/Footer";
 
 function App() {
   return (
