@@ -4,7 +4,12 @@ import "../css/Item.css";
 function Item({ name, rating, price, saleDiscount, image, brand }) {
   return (
     <div className="item-card">
-      <img className="imgaes" src={image} alt={"Item image"} width="100%" />
+      <img
+        className="imgaes"
+        src={import.meta.env.BASE_URL + image}
+        alt={"Item image"}
+        width="100%"
+      />
       <div className="item-brand">{brand}</div>
       <div className="item-name">{name}</div>
       <div className="item-info">
