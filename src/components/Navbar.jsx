@@ -28,7 +28,7 @@ const Navbar = () => {
           onClick={() => {
             setSelectedGender("Men");
             setIsOpen(false);
-            setGender("Men");
+             
           }}
         >
           Mens
@@ -37,7 +37,7 @@ const Navbar = () => {
           onClick={() => {
             setSelectedGender("Women");
             setIsOpen(false);
-            setGender("Women");
+             
           }}
         >
           Womens
