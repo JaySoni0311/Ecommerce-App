@@ -10,7 +10,7 @@ import Checkout from "./components/Checkout";
 function App() {
   return (
     <div className="App">
-      <HashRouter  basename="eSTORE">
+      <HashRouter  >
         <div>
           <Navbar />
         </div>
