@@ -228,6 +228,29 @@
     "price": 1599.0,
     "rating": 4.2,
     "image": "/assets/images/greenpant.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Jeans",
+    "brand": "Fabindia",
+    "category": "Men's Clothing",
+    "type": "Jeans",
+    "color": "Blue",
+
+    "price": 1299.0,
+    "rating": 4.4,
+    "image": "/assets/images/greenpant.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Jeans",
+    "brand": "Fabindia",
+    "category": "Men's Clothing",
+    "type": "Jeans",
+    "color": "Blue",
+
+    "price": 1299.0,
+    "rating": 4.4,
+    "image": "/assets/images/greenpant.jpg"
   }
-  
 ]

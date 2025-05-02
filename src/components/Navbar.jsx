@@ -47,7 +47,8 @@ const Navbar = () => {
       </ul>
       
       <div className="hamburger" onClick={toggleMenu}>
-        <GiHamburgerMenu size={40} color="black" />
+        <GiHamburgerMenu size={40} color="#747df3;
+" />
       </div>
     </div>
   );

@@ -1,9 +1,10 @@
 .item-card {
   display: inline-block;
-  margin: 15px;
+  margin: 10px;
   cursor: pointer;
   border: 1px solid gray;
   overflow: hidden;
+  /* min-width: 19.35vh; */
 }
 
 .item-brand {
@@ -41,7 +42,7 @@
   aspect-ratio: 1 / 1;
   /* makes it a square */
   object-fit: cover;
-  max-width: 30vh;
+  max-width: 209px;
 }
 
 @media (max-width: 639px) {
@@ -55,5 +56,9 @@
     height: 70vmin;
     margin: 5px;
     padding: 7px;
+  }
+
+  .imgaes{
+    max-width: 30vh !important;
   }
 }
