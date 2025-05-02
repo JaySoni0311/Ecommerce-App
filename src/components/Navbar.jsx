@@ -20,9 +20,9 @@ const Navbar = () => {
   const { setSelectedGender } = useContext(GlobalContext);
   return (
     <div className="navbar">
-      <a href="/" onClick={() => setIsOpen(false)}>
+      <Link to="/" onClick={() => setIsOpen(false)}>
         <h2>eSTORE</h2>
-      </a>
+      </Link>
       <ul className={`navbar-ul ${isOpen ? "open" : ""}`}>
         <li
           onClick={() => {

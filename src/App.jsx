@@ -10,7 +10,7 @@ import Checkout from "./components/Checkout";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter basename="eSTORE">
+      <HashRouter  basename="eSTORE">
         <div>
           <Navbar />
         </div>
@@ -21,7 +21,7 @@ function App() {
           <Route path="/checkout" element={<Checkout />} />
           <Route exact path="/" element={<HomePage />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
