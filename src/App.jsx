@@ -1,6 +1,6 @@
 import "./App.css";
 import HomePage from "./components/HomePage";
-import { HashRouter , Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ItemDetail from "./components/ItemDetail";
 import Navbar from "./components/Navbar";
 import Cart from "./components/Cart";
@@ -10,7 +10,7 @@ import Checkout from "./components/Checkout";
 function App() {
   return (
     <div className="App">
-      <HashRouter  basename="eSTORE">
+      <BrowserRouter  basename="eSTORE">
         <div>
           <Navbar />
         </div>
@@ -21,7 +21,7 @@ function App() {
           <Route path="/checkout" element={<Checkout />} />
           <Route exact path="/" element={<HomePage />} />
         </Routes>
-      </HashRouter>
+      </BrowserRouter>
     </div>
   );
 }
