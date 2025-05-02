@@ -15,7 +15,7 @@ function ItemList({ items }) {
   const showBackButton = selectedGender === "Men" || selectedGender === "Women";
   return (
     <>
-      <div className="back-btn">{showBackButton && <a href="/eSTORE" > &#8592; Back</a>}</div>
+      <div className="back-btn">{showBackButton && <a href="/eSTORE/" > &#8592; Back</a>}</div>
       <div className="item-list">
         {filteredItems.map((item) => (
           <Link to={`/item/${item.id}`} key={item.id}>
