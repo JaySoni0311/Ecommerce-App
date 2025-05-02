@@ -29,6 +29,13 @@ export default (state, action) => {
           (order) => order.orderId !== action.payload.id
         ),
       };
+
+      case "SET_SELECTED_GENDER":
+      return {
+        ...state,
+        selectedGender: action.payload,
+      };
+
     default:
       return state;
   }

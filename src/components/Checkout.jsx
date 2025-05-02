@@ -6,9 +6,9 @@ import "../css/Checkout.css";
 const Checkout = () => {
   const { cart, orders, addItemToOrderList, clearCart } =
     useContext(GlobalContext);
-  const { discount, extraFees, tax } = { discount: 20, extraFees: 99, tax: 5 };
+  const  extraFees =  20;
   const subTotal = Math.floor(cart?.reduce((sum, curr) => sum + curr.price, 0));
-  const total = Math.floor(subTotal + 99 + 5 - (subTotal + 99 + 5) * 0.2);
+  const total = Math.floor(subTotal + 20 );
   const [isOrdered, setIsOrdered] = useState(false);
   const handlePay = () => {
     addItemToOrderList({
@@ -44,28 +44,25 @@ const Checkout = () => {
               <h4>Checkout Summary</h4>
               <div className="checkout-summary">
                 <span>Subtotal</span>
-                <span>${subTotal}</span>
+                <span>₹{subTotal}</span>
               </div>
-              <div className="checkout-summary">
+              {/* <div className="checkout-summary">
                 <span>Discount</span>
                 <span>{discount}%</span>
-              </div>
+              </div> */}
               <div className="checkout-summary">
-                <span>Extra Fee</span>
-                <span>${extraFees}</span>
+                <span>Platform Fee</span>
+                <span>₹{extraFees}</span>
               </div>
-              <div className="checkout-summary">
-                <span>Tax</span>
-                <span>${tax}</span>
-              </div>
+              
             </div>
             <div className="custom-row">
               <h4>Total</h4>
-              <span>${total}</span>
+              <span>₹{total}</span>
             </div>
           </div>
           <button className="item-btn" onClick={handlePay}>
-            Pay ${total}
+            Pay ₹{total}
           </button>
         </>
       )}

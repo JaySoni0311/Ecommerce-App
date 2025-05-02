@@ -10,8 +10,8 @@
     "saleDiscount": 15,
     "price": 2499.0,
     "rating": 4.5,
-    
-    "image": "/assets/images/drees1.jpg"
+    "image": "/assets/images/drees1.jpg",
+    "gender": "Women"
 
   },
 
@@ -26,7 +26,9 @@
     "saleDiscount": 20,
     "price": 1799.0,
     "rating": 4.7,
-    "image": "/assets/images/dress2.jpg"
+    "image": "/assets/images/dress2.jpg",
+    "gender": "Women"
+
   },
   {
     "id": 3,
@@ -39,7 +41,9 @@
     "saleDiscount": 20,
     "price": 1299.0,
     "rating": 4.1,
-    "image": "/assets/images/dress3.jpg"
+    "image": "/assets/images/dress3.jpg",
+    "gender": "Women"
+
   },
   {
     "id": 4,
@@ -52,7 +56,9 @@
     "saleDiscount": 5,
     "price": 1399.0,
     "rating": 4.2,
-    "image": "/assets/images/redkurta.jpg"
+    "image": "/assets/images/redkurta.jpg",
+    "gender": "Men"
+
   },
   {
     "id": 5,
@@ -65,7 +71,9 @@
     "saleDiscount": 10,
     "price": 1499.0,
     "rating": 4.3,
-    "image": "/assets/images/yellow.jpg"
+    "image": "/assets/images/yellow.jpg",
+    "gender": "Men"
+
   },
 
   {
@@ -77,7 +85,9 @@
     "color": "Black",
     "price": 1157.0,
     "rating": 3.9,
-    "image": "/assets/images/whiteshoes.jpg"
+    "image": "/assets/images/whiteshoes.jpg",
+    "gender": "Men"
+
   },
   {
     "id": 7,
@@ -92,7 +102,9 @@
     "closure": "Slip-On",
     "price": 2999.0,
     "rating": 4.1,
-    "image": "/assets/images/redshoes.jpg"
+    "image": "/assets/images/redshoes.jpg",
+    "gender": "Men"
+
   },
   {
     "id": 8,
@@ -107,7 +119,9 @@
     "closure": "Lace-Up",
     "price": 2799.0,
     "rating": 4.0,
-    "image": "/assets/images/blueshoes.jpg"
+    "image": "/assets/images/blueshoes.jpg",
+    "gender": "Men"
+
   },
 
   {
@@ -120,7 +134,9 @@
     "color": "Black",
     "price": 690.0,
     "rating": 4.5,
-    "image": "/assets/images/wallet.jpg"
+    "image": "/assets/images/wallet.jpg",
+    "gender": "Men"
+
   },
   {
     "id": 10,
@@ -133,7 +149,9 @@
     "size": "34-42",
     "price": 1250.0,
     "rating": 4.3,
-    "image": "/assets/images/combowallet.jpg"
+    "image": "/assets/images/combowallet.jpg",
+    "gender": "Men"
+
   },
 
   {
@@ -147,7 +165,8 @@
     "occasion": "Evening",
     "price": 1199.0,
     "rating": 4.5,
-    "image": "/assets/images/clutch.jpg"
+    "image": "/assets/images/clutch.jpg",
+    "gender": "Women"
   },
   {
     "id": 12,
@@ -160,7 +179,9 @@
     "occasion": "Evening",
     "price": 1899.0,
     "rating": 4.0,
-    "image": "/assets/images/clutch2.jpg"
+    "image": "/assets/images/clutch2.jpg",
+    "gender": "Women"
+
   },
   {
     "id": 13,
@@ -170,17 +191,21 @@
     "type": "Perfume",
     "price": 799.0,
     "rating": 4.2,
-    "image": "/assets/images/perfume.jpg"
+    "image": "/assets/images/perfume.jpg",
+    "gender": "Men"
+
   },
   {
     "id": 14,
     "name": "Perfume",
-    "brand": "Engage",
+    "brand": "Beardo",
     "category": "Accessories",
     "type": "Perfume",
     "price": 499.0,
     "rating": 3.9,
-    "image": "/assets/images/perfume3.jpg"
+    "image": "/assets/images/perfume3.jpg",
+    "gender": "Men"
+
   },
   {
     "id": 15,
@@ -191,7 +216,9 @@
     "type": "Tshirt",
     "price": 1499.0,
     "rating": 4.9,
-    "image": "/assets/images/redtshirt.jpg"
+    "image": "/assets/images/redtshirt.jpg",
+    "gender": "Men"
+
   },
   {
     "id": 16,
@@ -203,7 +230,9 @@
 
     "price": 999.0,
     "rating": 3.7,
-    "image": "/assets/images/blueshirt.jpg"
+    "image": "/assets/images/blueshirt.jpg",
+    "gender": "Men"
+
   },
   {
     "id": 17,
@@ -215,7 +244,9 @@
 
     "price": 699.0,
     "rating": 4.2,
-    "image": "/assets/images/greentshirt.jpg"
+    "image": "/assets/images/greentshirt.jpg",
+    "gender": "Men"
+
   },
   {
     "id": 18,
@@ -227,7 +258,9 @@
 
     "price": 1599.0,
     "rating": 4.2,
-    "image": "/assets/images/greenpant.jpg"
+    "image": "/assets/images/greenpant.jpg",
+    "gender": "Men"
+
   },
   {
     "id": 19,
@@ -239,10 +272,12 @@
 
     "price": 1299.0,
     "rating": 4.4,
-    "image": "/assets/images/greenpant.jpg"
+    "image": "/assets/images/greenpant.jpg",
+    "gender": "Men"
+
   },
   {
-    "id": 19,
+    "id": 20,
     "name": "Jeans",
     "brand": "Fabindia",
     "category": "Men's Clothing",
@@ -251,6 +286,8 @@
 
     "price": 1299.0,
     "rating": 4.4,
-    "image": "/assets/images/greenpant.jpg"
+    "image": "/assets/images/greenpant.jpg",
+    "gender": "Men"
+
   }
 ]

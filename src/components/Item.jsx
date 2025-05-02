@@ -1,7 +1,8 @@
 import React from "react";
 import "../css/Item.css";
 
-function Item({ name, rating, price, saleDiscount, image, brand }) {
+function Item({ name, rating, price, image, brand }) {
+  
   return (
     <div className="item-card">
       <img

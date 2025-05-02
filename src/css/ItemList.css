@@ -1,8 +1,15 @@
 .item-list {
   column-count: auto;
+  min-height: 48rem;
+
 }
 
-@media (max-width: 639px) {
+.back-btn {
+  display: flex;
+  margin: 10px;
+}
+
+@media (max-width: 676px) {
 
   .item-list {
     column-count: 2;

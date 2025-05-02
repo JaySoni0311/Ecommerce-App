@@ -44,7 +44,7 @@ function ItemDetail() {
               setIsAdded(true);
             }}
           >
-            {isAdded ? <Link to="/cart">Go to Cart</Link> : "Add To bag"}
+             Add To Cart
           </button>
           <p className="item-description">
             Lorem Ipsum is simply dummy text of the printing and typesetting
