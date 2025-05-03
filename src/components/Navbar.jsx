@@ -67,7 +67,7 @@ const Navbar = () => {
 
       <div className="hamburger" onClick={toggleMenu}>
         <GiHamburgerMenu
-          size={50}
+          size={45}
           color="#747df3;
 "
         />
