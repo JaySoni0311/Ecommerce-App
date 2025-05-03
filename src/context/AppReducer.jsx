@@ -1,5 +1,3 @@
-import React from "react";
-
 export default (state, action) => {
   switch (action.type) {
     case "ADD_ITEM_IN_CART":
@@ -30,12 +28,17 @@ export default (state, action) => {
         ),
       };
 
-      case "SET_SELECTED_GENDER":
+    case "SET_SELECTED_GENDER":
       return {
         ...state,
         selectedGender: action.payload,
       };
 
+    case "SET_SELECTED_CATEGORY":
+      return {
+        ...state,
+        selectedCategory: action.payload,
+      };
     default:
       return state;
   }

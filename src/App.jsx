@@ -22,6 +22,7 @@ function App() {
           <Route exact path="/" element={<HomePage />} />
         </Routes>
       </BrowserRouter>
+      
     </div>
   );
 }

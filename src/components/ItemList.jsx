@@ -6,16 +6,27 @@ import { useContext } from "react";
 import { GlobalContext } from "../context/GlobalState";
 
 function ItemList({ items }) {
-  const { selectedGender } = useContext(GlobalContext);
+  const { selectedGender, selectedCategory } = useContext(GlobalContext);
 
-  const filteredItems = selectedGender
-    ? items.filter((item) => item.gender === selectedGender) // Filter by gender
-    : items; // Show all items when selectedGender is null
+  const filteredItems = items.filter((item) => {
+    if (selectedCategory === "Accessories") {
+      return item.category === "Accessories";
+    }
+    return !selectedGender || item.gender === selectedGender;
+  });
 
-  const showBackButton = selectedGender === "Men" || selectedGender === "Women";
+
+  const showBackButton =
+    selectedGender === "Men" ||
+    selectedGender === "Women" ||
+    selectedCategory === "Accessories";
+
+    
   return (
     <>
-      <div className="back-btn">{showBackButton && <a href="/eSTORE/" > &#8592; Back</a>}</div>
+      <div className="back-btn">
+        {showBackButton && <a href="/eSTORE/"> &#8592; Back</a>}
+      </div>
       <div className="item-list">
         {filteredItems.map((item) => (
           <Link to={`/item/${item.id}`} key={item.id}>

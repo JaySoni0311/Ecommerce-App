@@ -8,6 +8,8 @@ function Cart() {
 
   return (
     <div className="cart-container">
+      <Link to="/"> &#8592; Back</Link>
+
       <h1>Cart</h1>
       {!cart.length ? (
         <p>No Item Added! Please add something to your cart</p>

@@ -17,10 +17,10 @@ const Navbar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   const { cart } = useContext(GlobalContext);
-  const { setSelectedGender } = useContext(GlobalContext);
+  const { setSelectedGender, setSelectedCategory } = useContext(GlobalContext);
   return (
     <div className="navbar">
-      <Link to="/" onClick={() => setIsOpen(false)}>
+      <Link to="/ " onClick={() => setIsOpen(false)}>
         <h2>eSTORE</h2>
       </Link>
       <ul className={`navbar-ul ${isOpen ? "open" : ""}`}>
@@ -28,7 +28,7 @@ const Navbar = () => {
           onClick={() => {
             setSelectedGender("Men");
             setIsOpen(false);
-             
+            setSelectedCategory(null);
           }}
         >
           Mens
@@ -36,14 +36,21 @@ const Navbar = () => {
         <li
           onClick={() => {
             setSelectedGender("Women");
+            setSelectedCategory(null);
+
             setIsOpen(false);
-             
           }}
         >
           Womens
         </li>
-        <li>Brands</li>
-        <li>Accessories</li>
+        <li
+          onClick={() => {
+            setSelectedCategory("Accessories");
+            setIsOpen(false);
+          }}
+        >
+          Accessories
+        </li>
         <Link to="/cart" onClick={() => setIsOpen(false)}>
           <li>
             &#128722;{" "}
@@ -60,7 +67,7 @@ const Navbar = () => {
 
       <div className="hamburger" onClick={toggleMenu}>
         <GiHamburgerMenu
-          size={40}
+          size={50}
           color="#747df3;
 "
         />

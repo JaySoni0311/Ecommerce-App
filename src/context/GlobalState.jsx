@@ -4,7 +4,8 @@ import AppReducer from "./AppReducer";
 const initialState = {
   cart: [],
   orders: [],
-  selectedGender: null, // Default is 'All'
+  selectedGender: null,
+  selectedCategory: null, // Default is 'All'
 };
 
 export const GlobalContext = createContext(initialState);
@@ -46,11 +47,17 @@ export const GlobalProvider = ({ children }) => {
     });
   };
 
-  // Set the selected category
-  const setSelectedGender = (gender) => {
+   const setSelectedGender = (gender) => {
     dispatch({
       type: "SET_SELECTED_GENDER",
-      payload: gender, // Update selectedCategory in global state
+      payload: gender, 
+    });
+  };
+
+  const setSelectedCategory = (category) => {
+    dispatch({
+      type: "SET_SELECTED_CATEGORY",
+      payload: category, 
     });
   };
 
@@ -63,6 +70,9 @@ export const GlobalProvider = ({ children }) => {
         removeItemFromCartList,
         selectedGender: state.selectedGender,
         setSelectedGender,
+        selectedCategory: state.selectedCategory,
+
+        setSelectedCategory,
         clearCart,
         addItemToOrderList,
         removeItemFromOrderList,
