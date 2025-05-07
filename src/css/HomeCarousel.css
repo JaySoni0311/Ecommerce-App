@@ -1,0 +1,39 @@
+.carousel-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 1rem;
+  }
+  
+  .carousel .slide img {
+    max-height: 400px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .carousel .legend {
+    background: rgba(0, 0, 0, 0.6);
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  @media (max-width: 820px) {
+    .carousel .slide img {
+      max-height: 250px;
+    }
+  
+    .carousel .legend {
+      font-size: 1rem;
+      padding: 8px 16px;
+    }
+
+    .carousel-container {
+      width: 95%;
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 1px;
+  }
+  }
+  

@@ -1,3 +1,48 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import Item from "./Item";
+import "../css/ItemList.css";
+
+function ItemList({ items,filteredItems }) {
+  // Define categories with images and category names
+  const categoryOptions = [
+    { label: "Men", value: "Men", image: "/images/men.jpg" },
+    { label: "Women", value: "Women", image: "/images/women.jpg" },
+    { label: "Accessories", value: "Accessories", image: "/images/accessories.jpg" },
+  ];
+
+  return (
+    <>
+      {/* Shop by Category Section */}
+      <section className="categories">
+        <h2>Shop by Category</h2>
+        <div className="category-grid">
+          {categoryOptions.map((category, index) => (
+            <Link to={`/category/${category.value}`} key={index}>
+              <div className="category-card">
+                <img src={category.image} alt={category.label} />
+                <div className="category-name">{category.label}</div>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </section>
+  
+      {/* DO NOT render item list on home page */}
+    </>
+  );
+  
+}
+
+export default ItemList;
+
+
+
+
+//app
+
+
+
 import "./App.css";
 import HomePage from "./components/HomePage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -18,8 +63,6 @@ function App() {
           <Navbar />
         </div>
         <Routes>
-          <Route exact path="/" element={<HomePage />} />
-
           <Route path="/" element={<ItemList items={items} />} />
 
           {/* Category pages like /category/women */}
@@ -35,6 +78,7 @@ function App() {
           <Route path="/cart" element={<Cart />} />
           <Route path="/orders" element={<Orders />} />
           <Route path="/checkout" element={<Checkout />} />
+          <Route exact path="/" element={<HomePage />} />
         </Routes>
       </BrowserRouter>
     </div>

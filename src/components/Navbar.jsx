@@ -31,7 +31,9 @@ const Navbar = () => {
             setSelectedCategory(null);
           }}
         >
+          <Link  to={`/category/Men`}>
           Mens
+          </Link>
         </li>
         <li
           onClick={() => {
@@ -41,15 +43,18 @@ const Navbar = () => {
             setIsOpen(false);
           }}
         >
-          Womens
+          <Link  to={`/category/Women`}>
+          Women
+          </Link>
         </li>
         <li
           onClick={() => {
             setSelectedCategory("Accessories");
             setIsOpen(false);
           }}
-        >
+        ><Link  to={`/category/Accessories`}>
           Accessories
+          </Link>
         </li>
         <Link to="/cart" onClick={() => setIsOpen(false)}>
           <li>

@@ -1,48 +1,37 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Item from "./Item";
 import "../css/ItemList.css";
-import { Link } from "react-router-dom";
-import { useContext } from "react";
-import { GlobalContext } from "../context/GlobalState";
 
-function ItemList({ items }) {
-  const { selectedGender, selectedCategory } = useContext(GlobalContext);
+function ItemList({ items,filteredItems }) {
+  // Define categories with images and category names
+  const categoryOptions = [
+    { label: "Men", value: "Men", image: "./assets/images/blueshirt.jpg" },
+    { label: "Women", value: "Women", image: "./assets/images/drees1.jpg" },
+    { label: "Accessories", value: "Accessories", image:"./assets/images/perfume.jpg" },
+  ];
 
-  const filteredItems = items.filter((item) => {
-    if (selectedCategory === "Accessories") {
-      return item.category === "Accessories";
-    }
-    return !selectedGender || item.gender === selectedGender;
-  });
-
-
-  const showBackButton =
-    selectedGender === "Men" ||
-    selectedGender === "Women" ||
-    selectedCategory === "Accessories";
-
-    
   return (
     <>
-      <div className="back-btn">
-        {showBackButton && <a href="/eSTORE/"> &#8592; Back</a>}
-      </div>
-      <div className="item-list">
-        {filteredItems.map((item) => (
-          <Link to={`/item/${item.id}`} key={item.id}>
-            <Item
-              name={item.name}
-              rating={item.rating}
-              price={item.price}
-              saleDiscount={item.saleDiscount}
-              image={item.image}
-              brand={item.brand}
-            />
-          </Link>
-        ))}
-      </div>
+      {/* Shop by Category Section */}
+      <section className="item-category">
+        <h2>Shop by Category</h2>
+        <div className="category">
+          {categoryOptions.map((category, index) => (
+            <Link to={`/category/${category.value}`} key={index}>
+              <div className="category-section">
+                <img className="category-img"  src={category.image} alt={category.label} />
+                <div className="category-name">{category.label}</div>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </section>
+  
+      {/* DO NOT render item list on home page */}
     </>
   );
+  
 }
 
 export default ItemList;
