@@ -13,7 +13,7 @@ import items from "./mockData/items.json";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter basename="eSTORE">
+      <BrowserRouter basename="/eSTORE/">
         <div>
           <Navbar />
         </div>

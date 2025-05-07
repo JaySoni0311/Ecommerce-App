@@ -14,6 +14,9 @@ const CategoryPage = ({ items }) => {
 
   return (
     <div>
+     <Link to="/" style={{left: '0',
+    position: "absolute"}}> &#8592; Back</Link>
+
       <h2>{categoryName}</h2>
       
 
