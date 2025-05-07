@@ -20,8 +20,7 @@ function ItemDetail() {
       <Link to="/"> &#8592; Back</Link>
       <div className="item-detail">
         <div className="item-detail-image">
-          <img src={import.meta.env.BASE_URL
- + item.image} alt={"Item image"} />
+          <img src={import.meta.env.BASE_URL + item.image} alt={"Item image"} />
         </div>
         <div className="item-detail-info">
           <div className="item-brand" style={{ margin: "0px 10px" }}>
@@ -44,7 +43,7 @@ function ItemDetail() {
               setIsAdded(true);
             }}
           >
-             Add To Cart
+            Add To Cart
           </button>
           <p className="item-description">
             Lorem Ipsum is simply dummy text of the printing and typesetting

@@ -10,7 +10,7 @@ function Orders() {
           <h3>#ID-62Z-{order.orderId}</h3>
           {order.items.map((item) => (
             <div className="cart-item" key={item.id}>
-              <div className="item-price">${item.price}</div>
+              <div className="item-price">₹{item.price}</div>
               <div className="item-name">{item.name}</div>
               <div className="item-expectedDelivery">
                 (Expected cash on delivery 3 - 6 days)

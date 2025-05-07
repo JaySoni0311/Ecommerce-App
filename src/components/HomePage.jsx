@@ -10,7 +10,7 @@ function HomePage() {
     <section>
 
       <HomeCarousel/>
-      <ItemList items={items} />
+      <ItemList  />
       <Testimonials />
       <Footer />
 

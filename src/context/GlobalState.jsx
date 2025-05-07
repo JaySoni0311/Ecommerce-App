@@ -3,9 +3,7 @@ import AppReducer from "./AppReducer";
 
 const initialState = {
   cart: [],
-  orders: [],
-  selectedGender: null,
-  selectedCategory: null, // Default is 'All'
+  orders: [], // Default is 'All'
 };
 
 export const GlobalContext = createContext(initialState);
@@ -47,20 +45,6 @@ export const GlobalProvider = ({ children }) => {
     });
   };
 
-   const setSelectedGender = (gender) => {
-    dispatch({
-      type: "SET_SELECTED_GENDER",
-      payload: gender, 
-    });
-  };
-
-  const setSelectedCategory = (category) => {
-    dispatch({
-      type: "SET_SELECTED_CATEGORY",
-      payload: category, 
-    });
-  };
-
   return (
     <GlobalContext.Provider
       value={{
@@ -68,11 +52,6 @@ export const GlobalProvider = ({ children }) => {
         orders: state.orders,
         addItemToCartList,
         removeItemFromCartList,
-        selectedGender: state.selectedGender,
-        setSelectedGender,
-        selectedCategory: state.selectedCategory,
-
-        setSelectedCategory,
         clearCart,
         addItemToOrderList,
         removeItemFromOrderList,

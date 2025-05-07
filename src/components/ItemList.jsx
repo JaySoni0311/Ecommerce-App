@@ -1,10 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Item from "./Item";
 import "../css/ItemList.css";
 
-function ItemList({ items,filteredItems }) {
-  // Define categories with images and category names
+function ItemList() {
   const categoryOptions = [
     { label: "Men", value: "Men", image: "./assets/images/blueshirt.jpg" },
     { label: "Women", value: "Women", image: "./assets/images/drees1.jpg" },
@@ -13,7 +11,6 @@ function ItemList({ items,filteredItems }) {
 
   return (
     <>
-      {/* Shop by Category Section */}
       <section className="item-category">
         <h2>Shop by Category</h2>
         <div className="category">
@@ -28,7 +25,6 @@ function ItemList({ items,filteredItems }) {
         </div>
       </section>
   
-      {/* DO NOT render item list on home page */}
     </>
   );
   

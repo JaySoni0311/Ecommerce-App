@@ -28,17 +28,6 @@ export default (state, action) => {
         ),
       };
 
-    case "SET_SELECTED_GENDER":
-      return {
-        ...state,
-        selectedGender: action.payload,
-      };
-
-    case "SET_SELECTED_CATEGORY":
-      return {
-        ...state,
-        selectedCategory: action.payload,
-      };
     default:
       return state;
   }
